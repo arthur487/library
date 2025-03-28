@@ -54,7 +54,26 @@ header h1 {
 }
 header {
     position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+.container2 {
+    max-width: 1080px;
+    width: 100%;
+    margin: 80px auto;
+}
+.container2 h1 {
+    border-bottom: solid 1px black;
+}
+.container2 img {
+    max-width: 1080px;
+    width: 100%;
+    max-height: 800px;
+    height: 100%;
+    border-radius: 10px;
+}
+
 </style>
 <body>
     <header>
@@ -64,30 +83,30 @@ header {
                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#example">
                     Information 
                 </button>
-                <div class="modal" id="example" data-bs-backdrop="static">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5>
-                                    Information
-                                </h5>
-                                <button data-bs-dismiss="modal" type="button" class="btn-close">
-                                
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                This site is meant to be a library of my work that i have done in the past in order for me to keep track of my progress and skill.
-                            </div>
-                            <div class="modal-footer">
-                                <h5>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
+    <div class="modal" id="example" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>
+                        Information
+                    </h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn-close">
+                    
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This site is meant to be a library of my work that i have done in the past in order for me to keep track of my progress and skill.
+                </div>
+                <div class="modal-footer">
+                    <h5>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
             <div class="container">
                 <div class="row">
                 <div class="col-md-4">
@@ -176,7 +195,28 @@ header {
                 </div>
             </div>
         </div>
+    </div>
+    <div id="carousel" class="container2 carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <h1>
+                Favorite projects
+            </h1>
+            <div class="imgs">
+                <div data-bs-interval="2500" class="carousel-item active">
+                    <img src="imgs/Captura de tela 2025-03-20 173256.png" alt="">
+                </div>
+                <div data-bs-interval="2500" class="carousel-item">
+                    <img src="imgs/Captura de tela 2025-03-26 184233.png" alt="">
+                </div>
+                <div data-bs-interval="2500" class="carousel-item">
+                    <img src="imgs/Captura de tela 2025-03-27 190303.png" alt="">
+                </div>
+                <div data-bs-interval="2500" class="carousel-item">
+                    <img src="imgs/Captura de tela 2025-03-27 191229.png" alt="">
+                </div>
             </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <ul>
